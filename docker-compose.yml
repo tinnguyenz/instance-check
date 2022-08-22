@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+  tests:
+    build:
+      context: .
+      dockerfile: tests/Dockerfile
