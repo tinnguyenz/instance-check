@@ -24,5 +24,6 @@ instance2 = Instance(2, rule2)
 
 perfect_instance = Instance(3, perfect_rule)
 
-assert instance2.remove_loose_open_rule() == perfect_instance.rule
+def test_instance_filtered():
+    assert instance2.remove_loose_open_rule() == perfect_instance.rule
 
